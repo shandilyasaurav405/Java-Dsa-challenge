@@ -25,7 +25,34 @@ public static void hollow_Rect(int totRows, int totCols){
 
     }
 
-Q2)    
+Q2) Print inverted half pyramid
+   *
+  **
+ ***
+****
+
+
+ public static void invHalfPyramid(int n){
+      //outer loop for lines
+      for (int i =1; i<=n;i++){
+          //loop for spaces
+          for (int j = 1; j<= n-i;j++){
+              System.out.print(" ");
+          }
+          //loop for stars
+          for (int j = 1; j<=i;j++){
+              System.out.print("*");
+          }
+          System.out.println();
+      }
+  }
+
+    public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
+        System.out.println("Enter no. of lines : ");
+        int n = sc.nextInt();
+        invHalfPyramid(n);
+    }
 
 
 
