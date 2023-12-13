@@ -81,7 +81,7 @@ Q3) Print inverted Half pyramid with numbers
     }
  
 
-Q5) FLOYD's Triangle
+Q4) FLOYD's Triangle
  1 
  2 3 
  4 5 6 
@@ -110,7 +110,7 @@ public static void FloydsTriangle(int n){
     }
 
 
-Q4)0-1 triangle
+Q5)0-1 triangle
  1
  01
  101
@@ -142,6 +142,66 @@ Q4)0-1 triangle
         System.out.println("Enter no. of lines : ");
         int n = sc.nextInt();
        Zero_one_Triangle(n);
+    }
+
+
+Q6) butterfly pattern
+
+ *        *
+ **      **
+ ***    ***
+ ****  ****
+ **********
+ **********
+ ****  ****
+ ***    ***
+ **      **
+ *        *
+
+
+
+ public static void butterfly(int n){
+     //first half
+      for (int i =1; i<=n;i++){
+      //stars -i
+          for (int j = 1; j<=i;j++){
+              System.out.print("*");
+          }
+      // spaces -2*(n-i)
+          for (int j =1; j<=2*(n-i); j++){
+              System.out.print(" ");
+          }
+       //stars - i
+          for (int j = 1; j<= i; j++){
+              System.out.print("*");
+          }
+          System.out.println();
+
+      }
+
+      //2nd half
+      for (int i = n; i>=1; i--){
+          for (int j = 1; j<=i;j++){
+              System.out.print("*");
+          }
+          // spaces -2*(n-i)
+          for (int j =1; j<=2*(n-i); j++){
+              System.out.print(" ");
+          }
+          //stars - i
+          for (int j = 1; j<= i; j++){
+              System.out.print("*");
+          }
+          System.out.println();
+      }
+
+  }
+
+    public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
+        System.out.println("Enter no. of lines : ");
+        int n = sc.nextInt();
+       butterfly(n);
     }
 
 
