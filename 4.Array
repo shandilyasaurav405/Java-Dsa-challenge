@@ -17,7 +17,7 @@ Q1) Update the array with the help of method/function?
         System.out.println();
     }
 
-Q2) write the code to find a key in the given array?
+Q2) write the code to find a key in the given array of int type?
 
  public static int linearSearch(int numbers[], int key) {
         for (int i =0;i<numbers.length; i++){
@@ -40,3 +40,30 @@ Q2) write the code to find a key in the given array?
         }
 
     }
+
+Q3)write the code to find a key in the given array of string type ?
+
+public static int linearSearch(String menu[], String key) {
+
+        for (int i =0;i<menu.length; i++){
+            if (menu[i] == key){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+
+        String menu[] = {"dosa","samosa","frooti","coke","Momos"};
+        String key = "coke";
+        int index = linearSearch(menu,key);
+        if (index == -1){
+            System.out.println("NOT FOUND!");
+        }else {
+            System.out.println("key is at index : " + index);
+        }
+
+    }
+
+
