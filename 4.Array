@@ -156,6 +156,21 @@ public static void Pairs(int numbers[]) {
         int numbers[] = {2, 4, 6, 8, 10};
         Pairs(numbers);
 
+Q7) Left rotate an array by one place.
+
+ static int[] rotateArray(int[] arr, int n) {
+        // Write your code here.
+        int temp = arr[0];
+        for(int i =1; i<arr.length;i++){
+            arr[i-1] = arr[i];
+
+        }
+        arr[n-1] = temp;
+        return arr;
+
+    }
+}
+
     }
 
 
