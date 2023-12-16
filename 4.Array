@@ -155,6 +155,7 @@ public static void Pairs(int numbers[]) {
     public static void main(String[] args) {
         int numbers[] = {2, 4, 6, 8, 10};
         Pairs(numbers);
+}
 
 Q7) Left rotate an array by one place.
 
@@ -171,7 +172,7 @@ Q7) Left rotate an array by one place.
     }
 }
 
-    }
+    
 
 
 
