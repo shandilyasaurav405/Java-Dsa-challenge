@@ -63,7 +63,7 @@ Q1) Sort a given  array in asccnding order with the help of Bubble sort?
         PrintArr(arr);
     }
 
- Q2) Sort a given array in descending order with Selection sort?
+ Q3) Sort a given array in descending order with Selection sort?
    
 
   public static void SelectionSort(int arr[]) {
