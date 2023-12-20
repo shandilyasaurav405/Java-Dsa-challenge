@@ -185,25 +185,6 @@ public class sorting {
 
 
 
-Q7) Use Array.sort technique to print sorted array but with starting index and ending index is also  passes as an arguments?
-
-
- import java.util.Arrays;
-public class sorting {
-    public static void PrintArr(int arr[]) {
-        for (int i =0; i< arr.length;i++){
-            System.out.print(arr[i] +" ");
-        }
-        System.out.println();
-
-    }
-    public static void main(String[] args) {
-        int arr[] = {5, 4, 1,3,2};
-        Arrays.sort(arr,0,3  );
-        PrintArr(arr);
-
-    }
-}
 
   
 
