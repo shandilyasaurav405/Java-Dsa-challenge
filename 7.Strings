@@ -147,7 +147,7 @@ public class strings {
 }
 
 
-Q9)print largest string from an array.
+Q9)print largest string from an array.(Laxicographically)
 
 public class strings {
 
