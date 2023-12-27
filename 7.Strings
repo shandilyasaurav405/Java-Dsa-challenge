@@ -39,5 +39,18 @@ Q3)print the length of the String by using length() function.
         System.out.println(fullName.length());
     }
 }
+Q4) Concatinate two String and print it.
+
+public class strings {
+
+
+    public static void main(String[] args) {
+        String firstName = "Saurav";
+        String lastName = "Shandilya";
+        String fullName = firstName+" "+lastName;
+        System.out.println(fullName);
+    }
+}
+  
 
   
