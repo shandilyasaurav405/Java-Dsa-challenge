@@ -52,5 +52,23 @@ public class strings {
     }
 }
   
+Q5) print the each character of the string by using charAt.
 
+   public class strings {
+    public static void Printletters(String str) {
+        for (int i=0; i<str.length();i++){
+            System.out.print(str.charAt(i)+" ");
+        }
+        System.out.println();
+    }
+
+
+    public static void main(String[] args) {
+        String firstName = "Saurav";
+        String lastName = "Shandilya";
+        String fullName = firstName+" "+lastName;
+
+        Printletters(fullName);
+    }
+}
   
