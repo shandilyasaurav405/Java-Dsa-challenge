@@ -27,5 +27,17 @@ public class strings {
         System.out.println(name);
     }
 }
- 
+
+
+Q3)print the length of the String by using length() function.
+
+  public class strings {
+
+
+    public static void main(String[] args) {
+        String fullName = "Saurav Shandilya";
+        System.out.println(fullName.length());
+    }
+}
+
   
