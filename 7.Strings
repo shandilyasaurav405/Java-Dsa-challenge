@@ -223,7 +223,7 @@ public class strings {
 }
 
 
-Q12) Count how many times lowercase vowels occurred in a String entered by the
+Q12) Count how many times lowercase  & Uppercase vowels occurred in a String entered by the
 user.
 
 
