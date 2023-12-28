@@ -253,7 +253,7 @@ import java.util.Scanner;
 public class strings {
     public static void main(String[] args) {
         String S1="LISTEN";
-        String S2 = "SILNT";
+        String S2 = "SILENT";
         char C1[] =  S1.toCharArray();
         char C2 []= S2.toCharArray();
         if (C1.length != C2.length){
