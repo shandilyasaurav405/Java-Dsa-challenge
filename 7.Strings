@@ -245,5 +245,36 @@ public class strings {
 }
 
 
+Q13) Determine if 2 Strings are anagrams of each other.
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class strings {
+    public static void main(String[] args) {
+        String S1="LISTEN";
+        String S2 = "SILNT";
+        char C1[] =  S1.toCharArray();
+        char C2 []= S2.toCharArray();
+        if (C1.length != C2.length){
+            System.out.println("Not anagram");
+            System.exit(0);
+        }
+        Arrays.sort(C1);
+        Arrays.sort(C2);
+
+        for (int i =0; i< C1.length; i++){
+            if(C1[i] != C2[i]){
+                System.out.println("not anagram");
+                System.exit(0);
+            }
+        }
+        System.out.println("Anagram");
+    }
+}
+
+
+
+
 
   
