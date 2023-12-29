@@ -1,4 +1,4 @@
-Q1)apply bitwise and(&) on two numbers?
+Q1)apply bitwise and(&) on two  binary numbers?
 
 public class bit_manipulation {
     public static void main(String[] args) {
@@ -7,11 +7,20 @@ public class bit_manipulation {
 }
 
 
-Q2)apply bitwise or(|) on two numbers?
+Q2)apply bitwise or(|) on two binary numbers?
 
 
 public class bit_manipulation {
     public static void main(String[] args) {
         System.out.println(5|6);
+    }
+}
+
+Q3) apply bitwise xor(^) on two binary numbers?
+
+
+public class bit_manipulation {
+    public static void main(String[] args) {
+        System.out.println(5 ^ 6);
     }
 }
