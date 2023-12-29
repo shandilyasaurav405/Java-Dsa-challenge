@@ -43,4 +43,12 @@ public class bit_manipulation {
 }
 
 
+Q6) Binary right shift.
+
+public class bit_manipulation {
+    public static void main(String[] args) {
+        System.out.println(6>>1);
+    }
+}
+
 
