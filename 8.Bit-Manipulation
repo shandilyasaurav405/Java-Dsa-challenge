@@ -52,3 +52,25 @@ public class bit_manipulation {
 }
 
 
+Q7) check if the number is odd or even.
+
+public class bit_manipulation {
+
+    public static void oddOrEven(int n){
+        int bitmask =1;
+        if((( n & bitmask) ==0)){
+            //even no.
+            System.out.println("Even number");
+        }
+        //odd no.
+        else{
+            System.out.println("Odd number");
+        }
+
+    }
+    public static void main(String[] args) {
+        oddOrEven(3);
+        oddOrEven(11);
+        oddOrEven(14);
+    }
+}
