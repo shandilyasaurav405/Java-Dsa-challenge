@@ -7,3 +7,11 @@ public class bit_manipulation {
 }
 
 
+Q2)apply bitwise or(|) on two numbers?
+
+
+public class bit_manipulation {
+    public static void main(String[] args) {
+        System.out.println(5|6);
+    }
+}
