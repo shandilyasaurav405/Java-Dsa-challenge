@@ -34,3 +34,13 @@ public class bit_manipulation {
 }
 
 
+Q5) Binary left shift.
+
+public class bit_manipulation {
+    public static void main(String[] args) {
+        System.out.println(5<<2);
+    }
+}
+
+
+
