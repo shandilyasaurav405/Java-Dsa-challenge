@@ -74,3 +74,26 @@ public class bit_manipulation {
         oddOrEven(14);
     }
 }
+
+Q8) Get i'th bit of a number.
+
+public class bit_manipulation {
+
+    public static int getIthBit(int n, int i){
+        int bitmask =1<<i;
+        if((( n & bitmask) ==0)){
+
+           return 0;
+        }
+
+        else{
+           return 1;
+        }
+
+    }
+    public static void main(String[] args) {
+        System.out.println(getIthBit(10, 2));
+    }
+}
+
+
