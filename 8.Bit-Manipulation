@@ -155,3 +155,31 @@ public class bit_manipulation {
         System.out.println(updateIthBit(10, 2, 1 ));
     }
 }
+
+
+Q12) Update i'th bit (In depth concept of bit manipulation).
+
+public class bit_manipulation {
+
+    public static int setIthBit(int n, int i){
+        int bitmask =1<<i;
+        return n | bitmask;
+        }
+    public static  int clearIthbit(int n, int i){
+        int bitmask = ~(1<<i);
+        return n & bitmask;
+        }
+
+   public static int updateIthBit(int n, int i, int newBit) {
+
+       //   second way
+       n = clearIthbit(n, i);
+       int bitMask = newBit << i;
+       return n | bitMask;
+   }
+
+    public static void main(String[] args) {
+        System.out.println(updateIthBit(10, 2, 1 ));
+    }
+}
+
