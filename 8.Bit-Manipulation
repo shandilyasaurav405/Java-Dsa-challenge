@@ -128,4 +128,30 @@ public class bit_manipulation {
 }
 
 
+Q11) update I'th bit.
 
+public class bit_manipulation {
+
+    public static int setIthBit(int n, int i){
+        int bitmask =1<<i;
+        return n | bitmask;
+        }
+    public static  int clearIthbit(int n, int i){
+        int bitmask = ~(1<<i);
+        return n & bitmask;
+        }
+
+   public static int updateIthBit(int n, int i, int newBit) {
+        if(newBit == 0){
+            return clearIthbit(n, i);
+        }
+        else {
+            return setIthBit(n, i);
+        }
+
+   }
+
+    public static void main(String[] args) {
+        System.out.println(updateIthBit(10, 2, 1 ));
+    }
+}
