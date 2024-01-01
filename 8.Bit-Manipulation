@@ -113,6 +113,19 @@ public class bit_manipulation {
     }
 }
 
+Q10) Clear i'th bit.
+
+public class bit_manipulation {
+
+    public static int cleartIthBit(int n, int i) {
+        int bitmask = ~(1<<i);
+        return n & bitmask;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(cleartIthBit(10, 1));
+    }
+}
 
 
 
