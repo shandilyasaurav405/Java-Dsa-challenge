@@ -183,3 +183,16 @@ public class bit_manipulation {
     }
 }
 
+Q13) clear last I bits.
+
+public class bit_manipulation {
+
+   public static int clearIBits(int n, int i){
+       int bitmask = (~0)<<i;
+       return n & bitmask;
+   }
+    public static void main(String[] args) {
+        System.out.println(  clearIBits(15,2));
+
+    }
+}
