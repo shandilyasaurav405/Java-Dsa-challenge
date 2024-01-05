@@ -300,3 +300,18 @@ public class bit_manipulation {
         System.out.println(x + " + " + 1 + " is " + -~x);
     }
 }
+
+Q19) Convert uppercase characters to lowercase using bits.
+
+import java.util.Scanner;
+
+public class bit_manipulation {
+    public static void main(String[] args) {
+// Convert uppercase character to lowercase
+        for (char ch = 'A'; ch <= 'Z'; ch++) {
+            System.out.print((char) (ch | ' ')+" ");
+
+        }
+    }
+}
+
