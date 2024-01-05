@@ -315,3 +315,19 @@ public class bit_manipulation {
     }
 }
 
+
+Q20) convert lowercase character to uppercase using bits.
+
+
+import java.util.Scanner;
+
+public class bit_manipulation {
+    public static void main(String[] args) {
+// Convert uppercase character to Upperase
+        for (char ch = 'a'; ch <= 'z'; ch++) {
+            System.out.print((char) (ch & '_')+" ");
+
+        }
+    }
+}
+
