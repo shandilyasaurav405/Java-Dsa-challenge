@@ -301,3 +301,53 @@ public class tUf {
     }
 }
   
+
+Q13) Superior Elements
+
+Problem statement
+There is an integer array ‘a’ of size ‘n’.
+
+
+
+An element is called a Superior Element if it is greater than all the elements present to its right.
+
+
+
+You must return an array all Superior Elements in the array ‘a’.
+
+
+
+Note:
+
+The last element of the array is always a Superior Element. 
+
+
+
+import java.util.*;
+public class Solution {
+    public static List< Integer > superiorElements(int []a) {
+        int n = a.length;
+
+        // Max element to the right.
+        int maxElement = a[n - 1];
+
+        List < Integer > answer = new ArrayList<>();
+
+        // Last element is always a superior element.
+        answer.add(a[n - 1]);
+
+        // Iterate from right to left.
+        for (int i = n - 2; i >= 0; i--) {
+
+            // If current element is greater than all
+            // the elements to the right of itself.
+            if (a[i] > maxElement) {
+                answer.add(a[i]);
+                maxElement = a[i];
+            }
+        }
+
+        // Return the 'answer' here.
+        return answer;
+    }
+}
