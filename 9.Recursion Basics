@@ -35,3 +35,20 @@ Q2)Print number in increasing order (1 to n).
        int n = 10;
        printinc(n);
     }
+
+Q3) sum of number from 1to n.
+
+ public static int calcSum(int n){
+        if(n==1){
+            return 1;
+        }
+        int Snm1 = calcSum(n-1);
+        int sumn= n+Snm1;
+        return sumn;
+    }
+
+
+    public static void main(String[] args) {
+       int n = 3;
+        System.out.println(calcSum(3));
+    }
