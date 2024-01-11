@@ -105,6 +105,13 @@ Q6) Check if the array is sorted or not.
        }
        return isSorted(arr,i+1);
    }
+  public static void main(String[] args) {
+      int arr[]= {1,2,3, 7,4,5};
+        System.out.println(isSorted(arr, 0));
+
+
+    }
+
 
 
 Q7) Write  a function to find the firs occurance of a number in a array.
@@ -125,11 +132,19 @@ public static int firstOccurance(int arr[],int key, int i){
         System.out.println(firstOccurance(arr,key,0));
     }
 
+Q8)Print xto the power n.
 
-
+ public static int power(int x, int n){
+          //base case
+          if(n==0){
+              return 1;
+          }
+          int xnm1 = power(x,n-1);
+          int xn = x * xnm1;
+          return xn;
+      }
     public static void main(String[] args) {
-      int arr[]= {1,2,3, 7,4,5};
-        System.out.println(isSorted(arr, 0));
-
-
+        System.out.println(power(2,10 ));
     }
+
+  
