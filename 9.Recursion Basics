@@ -106,6 +106,27 @@ Q6) Check if the array is sorted or not.
        return isSorted(arr,i+1);
    }
 
+
+Q7) Write  a function to find the firs occurance of a number in a array.
+
+public static int firstOccurance(int arr[],int key, int i){
+           //base case
+           if(i== arr.length){
+               return -1;
+           }
+           if(arr[i]==key){
+               return i;
+           }
+           return firstOccurance(arr, key,i+1);
+       }
+    public static void main(String[] args) {
+      int arr[]= {1,2,4, 7,4,5};
+      int key = 4;
+        System.out.println(firstOccurance(arr,key,0));
+    }
+
+
+
     public static void main(String[] args) {
       int arr[]= {1,2,3, 7,4,5};
         System.out.println(isSorted(arr, 0));
