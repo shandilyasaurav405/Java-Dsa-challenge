@@ -132,7 +132,7 @@ public static int firstOccurance(int arr[],int key, int i){
         System.out.println(firstOccurance(arr,key,0));
     }
 
-Q8)Print xto the power n.
+Q8)Print xto the power n. (Brute Force)
 
  public static int power(int x, int n){
           //base case
