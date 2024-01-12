@@ -171,4 +171,30 @@ Q9) Tiling problem.
 
         System.out.println(tilingProblem(3));
     }
+
+
+Q10) friends Paring.
+
+  public static int friendsParing(int n) {
+        if(n ==1|| n==2){
+            return n;
+        }
+        //choice
+        //single
+        int fnm1 = friendsParing(n-1);
+        //pair
+        int fnm2 = friendsParing(n-2);
+        int pairWays = (n-1)*fnm2;
+
+        //total ways
+
+        int totWays = fnm1+pairWays;
+        return totWays;
+    }
+
+    public static void main(String[] args) {
+        System.out.println( friendsParing(3));
+
+    }
+
   
