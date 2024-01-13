@@ -102,3 +102,19 @@ Q4)  Print all Divisors of a number.
         }
         return ans;
     }
+
+
+Q5)  Sum of all divisors.
+
+
+public static int sumOfAllDivisors(int n){
+        int ans = 0;
+
+        
+        for (int i = 1; i <= n; i++)
+        {
+            ans += i * (n / i);
+        }
+
+        return ans;
+    }
