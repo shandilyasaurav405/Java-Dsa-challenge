@@ -63,3 +63,26 @@ public static void swap(int i, int j, int arr[]) {
 		return ans;
 
 	}
+
+
+Q3) Check a number is Palindrome number or not.
+
+
+public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int n = sc. nextInt();
+		int reverse = 0;
+		int dup = n;
+		while(n>0){
+			int lastDigit = n%10;
+			 n = n / 10;
+			 reverse = (reverse*10) + lastDigit;
+		}
+		if(dup == reverse){
+			System.out.println("true");
+		}
+		else{
+			System.out.println("false");
+		}
+		
+	}
