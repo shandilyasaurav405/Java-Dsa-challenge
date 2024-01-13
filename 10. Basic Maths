@@ -1,1 +1,25 @@
+Q1) Check a number is Armstrong or not.
+
+
+
+	public static void main(String[] args) {
+		// Write your code here
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int dup = n;
+		int sum = 0;
+		while(n>0){
+			int last_digit = n%10;
+			sum = sum+(last_digit*last_digit*last_digit);
+			n =n/10;
+		}
+		if(sum == dup){
+			System.out.println("true");
+		}
+		else{
+			System.out.println("false");
+		}
+		
+		}
+
 
