@@ -175,6 +175,10 @@ Q9) Tiling problem.
 
 Q10) friends Paring.
 
+Given n friends, each one can remain single or can be paired up with some other
+friend. Each friend can be paired only once. Find out the total number of ways in
+which friends can remain single or can be paired up.
+
   public static int friendsParing(int n) {
         if(n ==1|| n==2){
             return n;
@@ -223,5 +227,10 @@ Q11) Remove duplicates in a String.
          remove_dup(str, 0, new StringBuilder(), new boolean[26]);
 
     }
+
+
+
+
+
 
   
