@@ -197,4 +197,31 @@ Q10) friends Paring.
 
     }
 
+Q11) Remove duplicates in a String.
+
+
+ public static void remove_dup(String str, int idx, StringBuilder newString,boolean map[]){
+         //base case
+         if(idx == str.length()){
+             System.out.println(newString);
+             return;
+         }
+         char currChar = str.charAt(idx);
+
+         if(map[currChar-'a'] == true){
+             remove_dup(str,idx+1, newString,map);
+         }
+         else{
+             map[currChar-'a'] = true;
+
+             remove_dup(str,idx+1,newString.append(currChar),map);
+         }
+     }
+
+    public static void main(String[] args) {
+         String str ="aapnnacollege";
+         remove_dup(str, 0, new StringBuilder(), new boolean[26]);
+
+    }
+
   
