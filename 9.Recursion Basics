@@ -370,4 +370,31 @@ public static void say(int n, String arr[]){
 
     }
 
+Q18) chack the array is sorted or not.
+
+
+public static boolean isSorted(int arr[],int length){
+    //base case
+    if(length ==0 || length == 1){
+        return true;
+    }
+    if(arr[0] > arr[1]){
+        return false;
+    }
+    else{
+        boolean ans =  isSorted(java.util.Arrays.copyOfRange(arr, 1, length), length - 1);
+        return ans;
+    }
+
+}
+
+
+    public static void main(String[] args) {
+
+      int arr[] = {1,2,3,4,5,6};
+      int length = 6;
+     boolean result = isSorted(arr,length);
+        System.out.println(result);
+    }
+
   
