@@ -433,3 +433,23 @@ static void returnArr(int arr[], int idx){
          returnArr(arr,0);
     }
 }
+
+
+
+Q21) Print the maximum value of the array.
+
+
+static int max(int arr[],int idx){
+        if(idx == arr.length-1){
+            return arr[idx];
+        }
+        int smallAns = max(arr,idx+1);
+
+      return  Math.max(arr[idx],smallAns);
+
+    }
+    public static void main(String[] args) {
+       int arr[] = {2,3,4,5,7,18,9};
+        System.out.println(max(arr,0));
+
+    }
