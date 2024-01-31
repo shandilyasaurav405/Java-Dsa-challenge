@@ -399,22 +399,6 @@ public static boolean isSorted(int arr[],int length){
     }
 
 
-  Q19) Find the GCD of the two  numbers.
-
- static int GCD(int x, int y){
-       if(y==0){
-           return x;
-       }
-       return GCD(y,x%y);
-    }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int y = sc.nextInt();
-        System.out.println("GCD of x & y is : " +GCD(x,y));
-
-    }
-}
 
 
 Q20) print the element of the array by recursive call.
