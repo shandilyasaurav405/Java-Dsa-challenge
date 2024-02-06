@@ -477,7 +477,21 @@ static int power(int n,int p){
     }
 
 
+Q23) Count the number of digits.
 
+
+   static int countDigit(int n){
+        if(n == 0){
+            return 0;
+        }
+        return countDigit(n/10)+1;
+    }
+
+    public static void main(String[] args) {
+        int n = 435278618;
+        System.out.println(countDigit(n));
+
+    }
 
 
 
